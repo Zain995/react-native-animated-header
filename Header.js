@@ -5,10 +5,10 @@ const ios = Platform.OS === 'ios';
 const {width, height} = Dimensions.get('window');
 // from native-base
 const isIphoneX = ios && (height === 812 || width === 812);
-const iphoneXTopInset = 24;
+const iphoneXTopInset = 0;
 const initToolbarHeight = ios ? 46 : 56;
 
-const paddingTop = ios ? 18 : 0;
+const paddingTop = ios ? 10 : 0;
 const topInset =  isIphoneX ? iphoneXTopInset : 0;
 
 const toolbarHeight = initToolbarHeight + topInset + paddingTop;
